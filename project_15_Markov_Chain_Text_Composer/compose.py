@@ -52,7 +52,7 @@ def compose(g, words, length=50):
     return composition
 
 def main():
-    words = get_words_from_text('stone.txt')
+    words = get_words_from_text(os.path.join('texts','sorcerer_stone.txt'))
 
     if not words:
         raise ValueError("No words were found in the input text file.")
@@ -66,4 +66,5 @@ def main():
 
 
 if __name__ == '__main__':
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     main()
