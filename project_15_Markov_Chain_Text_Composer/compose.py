@@ -52,7 +52,7 @@ def compose(g, words, length=50):
     return composition
 
 def main():
-    words = get_words_from_text('texts/sorcerer_stone.txt')
+    words = get_words_from_text('sorcerer_stone.txt')
 
     if not words:
         raise ValueError("No words were found in the input text file.")
